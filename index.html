@@ -1,0 +1,476 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>GIS Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+ 
+<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<span class="icon solid major fa-globe-europe"></span>
+					<h1>Hi, I'm <strong>Dzhamilya</strong>! <p> Welcome to my digital portfolio! </p></h1>
+					<ul class="actions special">
+						<li><a href="#one" class="button scrolly">Discover</a></li>
+					</ul>
+				</div>
+			</section>
+
+<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<b><h2>About the webpage<br /></h2></b>
+							</header>
+							<p>I am a first-year student majoring in Earth & Environment and Chemistry at UCU. As part of my studies, I have taken a GIS course. During the course, I acquired some valuable skills on representation of geographic data. The main purpose of this webpage is to showcase the GIS skills I have acquired, by presenting my work. This webpage will highlight 4 maps I have produced. </p> 
+							<p> All of my maps are related to the Sustainable Development Goals. <a href="https://www.undp.org/sustainable-development-goals">The Sustainable Development Goals</a>, or SDGs, are a group of 17 international objectives set by the United Nations in 2015. They seek to address the most pressing social, economic, and environmental issues and direct efforts at international development until 2030. In order to ensure these goals are achieved, it is crucial to monitor the progress, by collecting data. Each goal has several Targets that define the objectives, and Indicators, the measures used to assess whether these Targets are being reached. Data collected has a spatial factor, which is why maps are great way of representing it.</p>
+						</div>
+						<div class="col-6 col-12-medium imp-medium">
+							<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+						</div>
+						<ul class="actions special">
+						<li><a href="#two" class="button scrolly">Maps</a></li>
+					</ul>
+					</div>
+				</div>
+			</section>
+
+<!-- Two -->
+			<section id="two" class="main style2">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+								<span class="image fit"><img src="images/pic02.png" alt="" /></span>
+						</div>
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<b><h2>Map 1. Global Choropleth Map</h2></b>
+								<h3>SDG Indicator 3.3.3. Malaria Incidence (per 1,000 population)</h3>
+							</header>
+							<b><p> The 3rd Goal, <a href="https://sdg-tracker.org/good-health#:~:text=per%201%2C000%20population-,Definition%3A%20Indicator%203.3.,of%20malaria%20in%20all%20countries.">Good Health and Well-Being</a>, aims to ensure healthy lives and promote well-being for all at all ages. For SDG 3, the UN has established 13 Targets and 28 Indicators. </p>
+							<p><a href="https://sdg-tracker.org/good-health#3.3">Target 3.3</a> aims to fight communicable diseases, one of which is malaria. Malaria is a serious disease caused by a parasite that infects mosquitoes, which then transmit it to humans. <a href="https://www.who.int/news-room/fact-sheets/detail/malaria">The World Health Organisation</a> reported that 247 million people were infected in 2021, 619 000 of which died. In the same year, 95% of all malaria cases occurred in Africa. Malaria can be prevented by avoiding mosquito bites and taking anti-malarial medicines.</p> 
+							<p>I have created this map using QGIS. The latest data (2021) was downloaded from the <a href="https://unstats.un.org/sdgs/dataportal">official website.</a> This type of map is called a choropleth map – a themed map with regions that have been styled to represent different classifications of a certain phenomenon or attribute. Depending on the importance of the attribute, these are given a colour, lightness, colour saturation, or pattern. For my map, I have chosen shades of red since red is associated with danger. The more saturated the colour, the higher the malaria incidence in this country. </p>
+						</b>
+						</div>
+					</div>
+				</div>
+			</section>
+
+<!-- Three -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<header class="major">
+						<h2> <b> Map 2. Remote Sensing </b> </h2>
+					</header>
+							<p>Remote sensing entails gathering data and analysing it without direct physical contact with the observed areas or objects. Generally, satellites use a variety of electromagnetic radiation wavelengths, including visible light, infrared, microwave, and radio waves to collect data. The reflected or emitted radiation from the target is detected and measured by the sensors on remote sensing platforms, yielding important details on the target's properties, composition, and spatial distribution.</p>
+							<p> For this assignment, I used Google Earth Engine to add layers for the given area in Southeast Kazakhstan. I then created an interactive Earth Engine App to share my web map. Data from Sentinel-2 from 2019 was used to create 2 layers of true and false colour composites.</p>
+							<p> A true colour composite is an image representation that closely resembles how the human eye perceives the scene, combining red, green, and blue bands of the electromagnetic spectrum. In false colour composite,  non-visible bands of the electromagnetic spectrum are assigned to the red, green, and blue channels, resulting in colours that are different from what the human eye would perceive. Different bands are selected to highlight specific features or properties of the observed objects or areas. I used the short-wave infrared band combination that uses SWIR (B12), NIR (B8A), and red (B4). This composite shows vegetation in various shades of green. The darker the shade of green, the denser the vegetation. Brown represents the bare soil, and light blue – urban areas. </p>
+							<p> For the third layer, I used data from Sentinel-5 that provides <a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_CO">offline high-resolution imagery of carbon monoxide(CO) concentrations </a> from 2018. CO is one of the main pollutants in urban areas, therefore, it is important to monitor its concentrations. </p> 
+						</div>
+						<div class="col-6 col-12-medium imp-medium">
+							<span class="iframe fit">
+								<iframe src="https://ddyussenova.users.earthengine.app/view/labassignment4final"width="550" height="400" style="border: 3px solid #555;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+<!-- Four -->
+			<section id="two" class="main style2">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium imp-medium">
+							<span class="iframe fit">
+								<iframe src="https://uni-utrecht.maps.arcgis.com/apps/instant/charts/index.html?appid=e9f2109530b54b74a60f62c75f121c20&locale=en-en"width="550" height="400" style="border: 3px solid #555;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</span>
+						</div>
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2><b>Map 3. Web Choropleth Map</b></h2>
+								<h3>SDG Indicator 3.6.1. Death rate due to road traffic injuries (per 100,000 population)</h3>
+							</header>
+								<b><p><a href="https://sdg-tracker.org/good-health#3.6">SDG Target 3.6.</a> aims to “halve the number of road traffic injuries by 2020”. Globally, <a href="https://www.who.int/data/gho/data/themes/topics/sdg-target-3_6-road-traffic-injuries">1.35 million</a> people died in traffic accidents in 2016, while millions more suffered major injuries and had long-term negative health consequences. Road traffic accidents are the primary cause of death for people between the ages of 15 and 29. Moreover, they are currently the 8th most common cause of death worldwide among all age groups, and by 2030, they are expected to be the 7th leading cause of death. SDG Indicator 3.6.1 is the only one in Target 3.6, measuring the absolute (total number of deaths) and the rate (deaths per 100,000 people). Road traffic deaths include vehicle drivers, passengers, motorcyclists, cyclists and pedestrians. </p>
+								<p>I have created this Global Choropleth map using ArcGIS Online. I then published this web map, by using ArcGIS Instant App. The darker the colour, the higher the mortality rate from road traffic injuries. The map is interactive and when you click on a country, you can see the mortality rate for 2016, and a diagram comparing the values in 2000 and 2016. I have also added a diagram, that shows the maximum mortality rate from road traffic injuries by continent.</p></b>
+						</div>
+					</div>
+				</div>
+			</section>
+
+<!-- Five -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<header class="major">
+						<h2> <b> Map 4. Web App for Data Collection </b> </h2>
+						<h3> Walking safely on the streets after it gets dark </h3>
+					</header>
+							<p><a href="https://sdg-tracker.org/peace-justice#16.1"> SDG 16.1 </a> targets reducing all forms of violence and related death rates everywhere. Indicator 16.1.4 measures the proportion of the population that feels safe walking alone around the area they live in after dark. This web app was created for surveying how safe people feel walking at night. I have created a questionnaire using ArcGIS Field Maps. Two features are displayed on the map: “how well the street is lit” and “how safe people feel walking on the street”. Both features are evaluated using the scale from 0 to 5. </p>
+							<p> Since some streets can be poorly lit but still be safe to walk on, and vice versa, I made the decision to take into account these two characteristics. The first feature, light, is represented by the glowy “firefly” symbol. It is intuitive for interpretation: the better the street is lit, the brighter the symbol. The second feature, safety, is represented by a coloured point. Colours vary from red to green, red being the least safe street. This is also intuitive since red colour is associated with danger, whereas green – with safety. </p>
+							<p> It is possible to find the location on the map and set the radius within which the points can be detected. This app will be useful for both the citizens and the governing bodies. The local governing bodies will be able to properly identify which regions require greater attention, and citizens will be able to plan their travels at night while taking safety into consideration.</p> 
+						</div>
+						<div class="col-6 col-12-medium imp-medium">
+							<span class="iframe fit">
+								<iframe src="https://uni-utrecht.maps.arcgis.com/apps/instant/nearby/index.html?appid=4c08cc8d5bf14a919fa357e30660654f&locale=en-en"width="550" height="400" style="border: 3px solid #555;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Five -->
+		<!--
+			<section id="five" class="main style1">
+				<div class="container">
+					<header class="major special">
+						<h2>Elements</h2>
+					</header>
+
+					<section>
+						<h4>Text</h4>
+						<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+						<hr />
+						<header>
+							<h4>Heading with a Subtitle</h4>
+							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+						<header>
+							<h5>Heading with a Subtitle</h5>
+							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+						<hr />
+						<h2>Heading Level 2</h2>
+						<h3>Heading Level 3</h3>
+						<h4>Heading Level 4</h4>
+						<h5>Heading Level 5</h5>
+						<h6>Heading Level 6</h6>
+						<hr />
+						<h5>Blockquote</h5>
+						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+						<h5>Preformatted</h5>
+						<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+					</section>
+
+					<section>
+						<h4>Lists</h4>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<h5>Unordered</h5>
+								<ul>
+									<li>Dolor pulvinar etiam.</li>
+									<li>Sagittis adipiscing.</li>
+									<li>Felis enim feugiat.</li>
+								</ul>
+								<h5>Alternate</h5>
+								<ul class="alt">
+									<li>Dolor pulvinar etiam.</li>
+									<li>Sagittis adipiscing.</li>
+									<li>Felis enim feugiat.</li>
+								</ul>
+							</div>
+							<div class="col-6 col-12-medium">
+								<h5>Ordered</h5>
+								<ol>
+									<li>Dolor pulvinar etiam.</li>
+									<li>Etiam vel felis viverra.</li>
+									<li>Felis enim feugiat.</li>
+									<li>Dolor pulvinar etiam.</li>
+									<li>Etiam vel felis lorem.</li>
+									<li>Felis enim et feugiat.</li>
+								</ol>
+								<h5>Icons</h5>
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<h5>Actions</h5>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<ul class="actions">
+									<li><a href="#" class="button primary">Default</a></li>
+									<li><a href="#" class="button">Default</a></li>
+								</ul>
+								<ul class="actions small">
+									<li><a href="#" class="button primary small">Small</a></li>
+									<li><a href="#" class="button small">Small</a></li>
+								</ul>
+								<ul class="actions stacked">
+									<li><a href="#" class="button primary">Default</a></li>
+									<li><a href="#" class="button">Default</a></li>
+								</ul>
+								<ul class="actions stacked">
+									<li><a href="#" class="button primary small">Small</a></li>
+									<li><a href="#" class="button small">Small</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-12-medium">
+								<ul class="actions stacked">
+									<li><a href="#" class="button primary fit">Default</a></li>
+									<li><a href="#" class="button fit">Default</a></li>
+								</ul>
+								<ul class="actions stacked">
+									<li><a href="#" class="button primary small fit">Small</a></li>
+									<li><a href="#" class="button small fit">Small</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h4>Table</h4>
+						<h5>Default</h5>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Item One</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Two</td>
+										<td>Vis ac commodo adipiscing arcu aliquet.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Three</td>
+										<td> Morbi faucibus arcu accumsan lorem.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Four</td>
+										<td>Vitae integer tempus condimentum.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Five</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+
+						<h5>Alternate</h5>
+						<div class="table-wrapper">
+							<table class="alt">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Item One</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Two</td>
+										<td>Vis ac commodo adipiscing arcu aliquet.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Three</td>
+										<td> Morbi faucibus arcu accumsan lorem.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Four</td>
+										<td>Vitae integer tempus condimentum.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Five</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</section>
+
+					<section>
+						<h4>Buttons</h4>
+						<ul class="actions">
+							<li><a href="#" class="button primary">Primary</a></li>
+							<li><a href="#" class="button">Default</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="#" class="button large">Large</a></li>
+							<li><a href="#" class="button">Default</a></li>
+							<li><a href="#" class="button small">Small</a></li>
+						</ul>
+						<ul class="actions fit">
+							<li><a href="#" class="button fit">Fit</a></li>
+							<li><a href="#" class="button primary fit">Fit</a></li>
+							<li><a href="#" class="button fit">Fit</a></li>
+						</ul>
+						<ul class="actions fit small">
+							<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+							<li><a href="#" class="button fit small">Fit + Small</a></li>
+							<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+							<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+						</ul>
+						<ul class="actions">
+							<li><span class="button primary disabled">Disabled</span></li>
+							<li><span class="button disabled">Disabled</span></li>
+						</ul>
+					</section>
+
+					<section>
+						<h4>Form</h4>
+						<form method="post" action="#">
+							<div class="row gtr-uniform gtr-50">
+								<div class="col-6 col-12-xsmall">
+									<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+								</div>
+								<div class="col-12">
+									<select name="demo-category" id="demo-category">
+										<option value="">- Category -</option>
+										<option value="1">Manufacturing</option>
+										<option value="1">Shipping</option>
+										<option value="1">Administration</option>
+										<option value="1">Human Resources</option>
+									</select>
+								</div>
+								<div class="col-4 col-12-small">
+									<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+									<label for="demo-priority-low">Low</label>
+								</div>
+								<div class="col-4 col-12-small">
+									<input type="radio" id="demo-priority-normal" name="demo-priority">
+									<label for="demo-priority-normal">Normal</label>
+								</div>
+								<div class="col-4 col-12-small">
+									<input type="radio" id="demo-priority-high" name="demo-priority">
+									<label for="demo-priority-high">High</label>
+								</div>
+								<div class="col-6 col-12-small">
+									<input type="checkbox" id="demo-copy" name="demo-copy">
+									<label for="demo-copy">Email me a copy</label>
+								</div>
+								<div class="col-6 col-12-small">
+									<input type="checkbox" id="demo-human" name="demo-human" checked>
+									<label for="demo-human">Not a robot</label>
+								</div>
+								<div class="col-12">
+									<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</section>
+
+					<section>
+						<h4>Image</h4>
+						<h5>Fit</h5>
+						<div class="box alt">
+							<div class="row gtr-uniform gtr-50">
+								<div class="col-12"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+							</div>
+						</div>
+						<h5>Left &amp; Right</h5>
+						<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+					</section>
+
+				</div>
+			</section>
+		-->
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="https://www.facebook.com/profile.php?id=100084929246619" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="https://instagram.com/jambayamba?igshid=MmIzYWVlNDQ5Yg==" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://github.com/DDyussenova" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+				<p> d.dyussenova@students.uu.nl </p>
+				<ul class="copyright">
+					<li>&copy; Dzhamilya Dyussenova</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
